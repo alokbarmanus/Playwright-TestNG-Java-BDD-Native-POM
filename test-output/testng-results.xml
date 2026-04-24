@@ -1,0 +1,805 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="22" passed="22" failed="0" skipped="0">
+  <reporter-output>
+    <line>
+      <![CDATA[[Step] Login as Admin / admin123]]>
+    </line>
+    <line>
+      <![CDATA[[Step] Waiting for dashboard page]]>
+    </line>
+    <line>
+      <![CDATA[[Step] Dashboard heading is visible]]>
+    </line>
+    <line>
+      <![CDATA[[Step] Dashboard heading displayed: Dashboard]]>
+    </line>
+    <line>
+      <![CDATA[[Step] Login as Admin / admin123]]>
+    </line>
+    <line>
+      <![CDATA[[Step] Waiting for dashboard page]]>
+    </line>
+    <line>
+      <![CDATA[[Step] Top navigation bar is visible]]>
+    </line>
+    <line>
+      <![CDATA[[Step] Login as Admin / admin123]]>
+    </line>
+    <line>
+      <![CDATA[[Step] Waiting for dashboard page]]>
+    </line>
+    <line>
+      <![CDATA[[Step] Menu item visible: Dashboard]]>
+    </line>
+    <line>
+      <![CDATA[[Step] Login as Admin / admin123]]>
+    </line>
+    <line>
+      <![CDATA[[Step] Waiting for dashboard page]]>
+    </line>
+    <line>
+      <![CDATA[[Step] Menu item visible: Admin]]>
+    </line>
+    <line>
+      <![CDATA[[Step] Login as Admin / admin123]]>
+    </line>
+    <line>
+      <![CDATA[[Step] Waiting for dashboard page]]>
+    </line>
+    <line>
+      <![CDATA[[Step] Menu item visible: Leave]]>
+    </line>
+    <line>
+      <![CDATA[[Step] Login as Admin / admin123]]>
+    </line>
+    <line>
+      <![CDATA[[Step] Waiting for dashboard page]]>
+    </line>
+    <line>
+      <![CDATA[[Step] Menu item visible: Time]]>
+    </line>
+    <line>
+      <![CDATA[[Step] Login as Admin / admin123]]>
+    </line>
+    <line>
+      <![CDATA[[Step] Waiting for dashboard page]]>
+    </line>
+    <line>
+      <![CDATA[[Step] Menu item visible: PIM]]>
+    </line>
+    <line>
+      <![CDATA[[Step] Login as Admin / admin123]]>
+    </line>
+    <line>
+      <![CDATA[[Step] Waiting for dashboard page]]>
+    </line>
+    <line>
+      <![CDATA[[Step] Quick Launch widget is visible]]>
+    </line>
+    <line>
+      <![CDATA[[Step] Login as Admin / admin123]]>
+    </line>
+    <line>
+      <![CDATA[[Step] Waiting for dashboard page]]>
+    </line>
+    <line>
+      <![CDATA[[Step] Quick Launch shortcut visible: Assign Leave]]>
+    </line>
+    <line>
+      <![CDATA[[Step] Login as Admin / admin123]]>
+    </line>
+    <line>
+      <![CDATA[[Step] Waiting for dashboard page]]>
+    </line>
+    <line>
+      <![CDATA[[Step] Quick Launch shortcut visible: Leave List]]>
+    </line>
+    <line>
+      <![CDATA[[Step] Login as Admin / admin123]]>
+    </line>
+    <line>
+      <![CDATA[[Step] Waiting for dashboard page]]>
+    </line>
+    <line>
+      <![CDATA[[Step] Quick Launch shortcut visible: Timesheets]]>
+    </line>
+    <line>
+      <![CDATA[[Step] Login as Admin / admin123]]>
+    </line>
+    <line>
+      <![CDATA[[Step] Waiting for dashboard page]]>
+    </line>
+    <line>
+      <![CDATA[[Step] Quick Launch shortcut visible: Apply Leave]]>
+    </line>
+    <line>
+      <![CDATA[[Step] Login as Admin / admin123]]>
+    </line>
+    <line>
+      <![CDATA[[Step] Waiting for dashboard page]]>
+    </line>
+    <line>
+      <![CDATA[[Step] Quick Launch shortcut visible: My Leave]]>
+    </line>
+    <line>
+      <![CDATA[[Step] Login as Admin / admin123]]>
+    </line>
+    <line>
+      <![CDATA[[Step] Waiting for dashboard page]]>
+    </line>
+    <line>
+      <![CDATA[[Step] Quick Launch shortcut visible: My Timesheet]]>
+    </line>
+    <line>
+      <![CDATA[[Step] Navigating to login page]]>
+    </line>
+    <line>
+      <![CDATA[[Step] Entering username: Admin and password: admin123]]>
+    </line>
+    <line>
+      <![CDATA[[Step] User redirected to dashboard]]>
+    </line>
+    <line>
+      <![CDATA[[Step] Dashboard header displayed: Dashboard]]>
+    </line>
+    <line>
+      <![CDATA[[Step] Navigating to login page]]>
+    </line>
+    <line>
+      <![CDATA[[Step] Entering username: invalid_user and password: invalid_pass]]>
+    </line>
+    <line>
+      <![CDATA[[Step] Error message displayed: Invalid credentials]]>
+    </line>
+    <line>
+      <![CDATA[[Step] Navigating to login page]]>
+    </line>
+    <line>
+      <![CDATA[[Step] Entering username: invalid_user and password: admin123]]>
+    </line>
+    <line>
+      <![CDATA[[Step] Error message displayed: Invalid credentials]]>
+    </line>
+    <line>
+      <![CDATA[[Step] Navigating to login page]]>
+    </line>
+    <line>
+      <![CDATA[[Step] Entering username: Admin and password: wrongpass]]>
+    </line>
+    <line>
+      <![CDATA[[Step] Error message displayed: Invalid credentials]]>
+    </line>
+    <line>
+      <![CDATA[[Step] Navigating to login page]]>
+    </line>
+    <line>
+      <![CDATA[[Step] Entering username:  and password: ]]>
+    </line>
+    <line>
+      <![CDATA[[Step] Error message displayed: Required]]>
+    </line>
+    <line>
+      <![CDATA[[Step] Navigating to login page]]>
+    </line>
+    <line>
+      <![CDATA[[Step] Entering username: ${username} and password: ${password}]]>
+    </line>
+    <line>
+      <![CDATA[[Step] User redirected to dashboard]]>
+    </line>
+    <line>
+      <![CDATA[[Step] Dashboard header displayed: Dashboard]]>
+    </line>
+    <line>
+      <![CDATA[[Step] Navigating to login page]]>
+    </line>
+    <line>
+      <![CDATA[[Step] Login using dataRef: ${loginData}]]>
+    </line>
+    <line>
+      <![CDATA[[Step] Address info: street=123 Main St, city=Anytown, state=CA, zip=12345]]>
+    </line>
+    <line>
+      <![CDATA[[Step] Navigating to login page]]>
+    </line>
+    <line>
+      <![CDATA[[Step] Entering username: ${username} and password: ${password}]]>
+    </line>
+    <line>
+      <![CDATA[[Step] Address info: street=3 Marshall St, city=Irvington, state=NJ, zip=07111]]>
+    </line>
+  </reporter-output>
+  <suite started-at="2026-04-24T12:03:49 EDT" name="Playwright BDD TestNG Suite - UAT" finished-at="2026-04-24T12:06:31 EDT" duration-ms="162255">
+    <groups>
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.automation.runners.TestRunner@6ae5aa72]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
+    </groups>
+    <test started-at="2026-04-24T12:03:49 EDT" name="Login Tests" finished-at="2026-04-24T12:06:31 EDT" duration-ms="162255">
+      <class name="com.automation.runners.TestRunner">
+        <test-method is-config="true" signature="beforeSuite()[pri:0, instance:com.automation.runners.TestRunner@6ae5aa72]" started-at="2026-04-24T12:03:49 EDT" name="beforeSuite" finished-at="2026-04-24T12:03:49 EDT" duration-ms="161" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeSuite -->
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:com.automation.runners.TestRunner@6ae5aa72]" started-at="2026-04-24T12:03:49 EDT" name="setUpClass" finished-at="2026-04-24T12:03:49 EDT" duration-ms="427" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@36c281ed]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.automation.runners.TestRunner@6ae5aa72]" started-at="2026-04-24T12:03:49 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-04-24T12:04:09 EDT" duration-ms="19376" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Dashboard page heading is displayed"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Dashboard Page Functionality"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[[Step] Login as Admin / admin123]]>
+            </line>
+            <line>
+              <![CDATA[[Step] Waiting for dashboard page]]>
+            </line>
+            <line>
+              <![CDATA[[Step] Dashboard heading is visible]]>
+            </line>
+            <line>
+              <![CDATA[[Step] Dashboard heading displayed: Dashboard]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.automation.runners.TestRunner@6ae5aa72]" started-at="2026-04-24T12:04:09 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-04-24T12:04:14 EDT" duration-ms="5966" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Top navigation bar is visible on the dashboard"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Dashboard Page Functionality"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[[Step] Login as Admin / admin123]]>
+            </line>
+            <line>
+              <![CDATA[[Step] Waiting for dashboard page]]>
+            </line>
+            <line>
+              <![CDATA[[Step] Top navigation bar is visible]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.automation.runners.TestRunner@6ae5aa72]" started-at="2026-04-24T12:04:14 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-04-24T12:04:22 EDT" duration-ms="7093" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Top navigation menu items are visible"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Dashboard Page Functionality"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[[Step] Login as Admin / admin123]]>
+            </line>
+            <line>
+              <![CDATA[[Step] Waiting for dashboard page]]>
+            </line>
+            <line>
+              <![CDATA[[Step] Menu item visible: Dashboard]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.automation.runners.TestRunner@6ae5aa72]" started-at="2026-04-24T12:04:22 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-04-24T12:04:29 EDT" duration-ms="6975" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Top navigation menu items are visible"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Dashboard Page Functionality"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[[Step] Login as Admin / admin123]]>
+            </line>
+            <line>
+              <![CDATA[[Step] Waiting for dashboard page]]>
+            </line>
+            <line>
+              <![CDATA[[Step] Menu item visible: Admin]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.automation.runners.TestRunner@6ae5aa72]" started-at="2026-04-24T12:04:29 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-04-24T12:04:36 EDT" duration-ms="7441" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Top navigation menu items are visible"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Dashboard Page Functionality"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[[Step] Login as Admin / admin123]]>
+            </line>
+            <line>
+              <![CDATA[[Step] Waiting for dashboard page]]>
+            </line>
+            <line>
+              <![CDATA[[Step] Menu item visible: Leave]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.automation.runners.TestRunner@6ae5aa72]" started-at="2026-04-24T12:04:36 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-04-24T12:04:42 EDT" duration-ms="6118" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Top navigation menu items are visible"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Dashboard Page Functionality"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[[Step] Login as Admin / admin123]]>
+            </line>
+            <line>
+              <![CDATA[[Step] Waiting for dashboard page]]>
+            </line>
+            <line>
+              <![CDATA[[Step] Menu item visible: Time]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.automation.runners.TestRunner@6ae5aa72]" started-at="2026-04-24T12:04:42 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-04-24T12:04:50 EDT" duration-ms="8084" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Top navigation menu items are visible"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Dashboard Page Functionality"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[[Step] Login as Admin / admin123]]>
+            </line>
+            <line>
+              <![CDATA[[Step] Waiting for dashboard page]]>
+            </line>
+            <line>
+              <![CDATA[[Step] Menu item visible: PIM]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.automation.runners.TestRunner@6ae5aa72]" started-at="2026-04-24T12:04:50 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-04-24T12:04:57 EDT" duration-ms="6548" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Quick Launch widget is displayed"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Dashboard Page Functionality"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[[Step] Login as Admin / admin123]]>
+            </line>
+            <line>
+              <![CDATA[[Step] Waiting for dashboard page]]>
+            </line>
+            <line>
+              <![CDATA[[Step] Quick Launch widget is visible]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.automation.runners.TestRunner@6ae5aa72]" started-at="2026-04-24T12:04:57 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-04-24T12:05:04 EDT" duration-ms="7131" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["All Quick Launch shortcuts are visible"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Dashboard Page Functionality"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[[Step] Login as Admin / admin123]]>
+            </line>
+            <line>
+              <![CDATA[[Step] Waiting for dashboard page]]>
+            </line>
+            <line>
+              <![CDATA[[Step] Quick Launch shortcut visible: Assign Leave]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.automation.runners.TestRunner@6ae5aa72]" started-at="2026-04-24T12:05:04 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-04-24T12:05:11 EDT" duration-ms="6952" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["All Quick Launch shortcuts are visible"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Dashboard Page Functionality"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[[Step] Login as Admin / admin123]]>
+            </line>
+            <line>
+              <![CDATA[[Step] Waiting for dashboard page]]>
+            </line>
+            <line>
+              <![CDATA[[Step] Quick Launch shortcut visible: Leave List]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.automation.runners.TestRunner@6ae5aa72]" started-at="2026-04-24T12:05:11 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-04-24T12:05:19 EDT" duration-ms="7873" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["All Quick Launch shortcuts are visible"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Dashboard Page Functionality"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[[Step] Login as Admin / admin123]]>
+            </line>
+            <line>
+              <![CDATA[[Step] Waiting for dashboard page]]>
+            </line>
+            <line>
+              <![CDATA[[Step] Quick Launch shortcut visible: Timesheets]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.automation.runners.TestRunner@6ae5aa72]" started-at="2026-04-24T12:05:19 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-04-24T12:05:26 EDT" duration-ms="7705" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["All Quick Launch shortcuts are visible"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Dashboard Page Functionality"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[[Step] Login as Admin / admin123]]>
+            </line>
+            <line>
+              <![CDATA[[Step] Waiting for dashboard page]]>
+            </line>
+            <line>
+              <![CDATA[[Step] Quick Launch shortcut visible: Apply Leave]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.automation.runners.TestRunner@6ae5aa72]" started-at="2026-04-24T12:05:26 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-04-24T12:05:34 EDT" duration-ms="8002" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["All Quick Launch shortcuts are visible"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Dashboard Page Functionality"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[[Step] Login as Admin / admin123]]>
+            </line>
+            <line>
+              <![CDATA[[Step] Waiting for dashboard page]]>
+            </line>
+            <line>
+              <![CDATA[[Step] Quick Launch shortcut visible: My Leave]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.automation.runners.TestRunner@6ae5aa72]" started-at="2026-04-24T12:05:34 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-04-24T12:05:42 EDT" duration-ms="8022" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["All Quick Launch shortcuts are visible"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Dashboard Page Functionality"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[[Step] Login as Admin / admin123]]>
+            </line>
+            <line>
+              <![CDATA[[Step] Waiting for dashboard page]]>
+            </line>
+            <line>
+              <![CDATA[[Step] Quick Launch shortcut visible: My Timesheet]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.automation.runners.TestRunner@6ae5aa72]" started-at="2026-04-24T12:05:42 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-04-24T12:05:48 EDT" duration-ms="5577" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["LoginPage 01: Successful login with valid credentials"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Login Functionality"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[[Step] Navigating to login page]]>
+            </line>
+            <line>
+              <![CDATA[[Step] Entering username: Admin and password: admin123]]>
+            </line>
+            <line>
+              <![CDATA[[Step] User redirected to dashboard]]>
+            </line>
+            <line>
+              <![CDATA[[Step] Dashboard header displayed: Dashboard]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.automation.runners.TestRunner@6ae5aa72]" started-at="2026-04-24T12:05:48 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-04-24T12:05:53 EDT" duration-ms="5455" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["LoginPage 02: Login with invalid credentials"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Login Functionality"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[[Step] Navigating to login page]]>
+            </line>
+            <line>
+              <![CDATA[[Step] Entering username: invalid_user and password: invalid_pass]]>
+            </line>
+            <line>
+              <![CDATA[[Step] Error message displayed: Invalid credentials]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.automation.runners.TestRunner@6ae5aa72]" started-at="2026-04-24T12:05:53 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-04-24T12:06:02 EDT" duration-ms="8510" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["LoginPage 03 Login attempts with multiple invalid credential sets"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Login Functionality"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[[Step] Navigating to login page]]>
+            </line>
+            <line>
+              <![CDATA[[Step] Entering username: invalid_user and password: admin123]]>
+            </line>
+            <line>
+              <![CDATA[[Step] Error message displayed: Invalid credentials]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.automation.runners.TestRunner@6ae5aa72]" started-at="2026-04-24T12:06:02 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-04-24T12:06:09 EDT" duration-ms="7167" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["LoginPage 03 Login attempts with multiple invalid credential sets"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Login Functionality"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[[Step] Navigating to login page]]>
+            </line>
+            <line>
+              <![CDATA[[Step] Entering username: Admin and password: wrongpass]]>
+            </line>
+            <line>
+              <![CDATA[[Step] Error message displayed: Invalid credentials]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.automation.runners.TestRunner@6ae5aa72]" started-at="2026-04-24T12:06:09 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-04-24T12:06:13 EDT" duration-ms="4173" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["LoginPage 03 Login attempts with multiple invalid credential sets"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Login Functionality"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[[Step] Navigating to login page]]>
+            </line>
+            <line>
+              <![CDATA[[Step] Entering username:  and password: ]]>
+            </line>
+            <line>
+              <![CDATA[[Step] Error message displayed: Required]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.automation.runners.TestRunner@6ae5aa72]" started-at="2026-04-24T12:06:13 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-04-24T12:06:19 EDT" duration-ms="5998" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["LoginPage 04: Successful login with plain JSON data"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Login Functionality"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[[Step] Navigating to login page]]>
+            </line>
+            <line>
+              <![CDATA[[Step] Entering username: ${username} and password: ${password}]]>
+            </line>
+            <line>
+              <![CDATA[[Step] User redirected to dashboard]]>
+            </line>
+            <line>
+              <![CDATA[[Step] Dashboard header displayed: Dashboard]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.automation.runners.TestRunner@6ae5aa72]" started-at="2026-04-24T12:06:19 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-04-24T12:06:25 EDT" duration-ms="5971" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["LoginPage 05: Successful login with JSON data as Map"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Login Functionality"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[[Step] Navigating to login page]]>
+            </line>
+            <line>
+              <![CDATA[[Step] Login using dataRef: ${loginData}]]>
+            </line>
+            <line>
+              <![CDATA[[Step] Address info: street=123 Main St, city=Anytown, state=CA, zip=12345]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.automation.runners.TestRunner@6ae5aa72]" started-at="2026-04-24T12:06:25 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-04-24T12:06:31 EDT" duration-ms="5555" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["LoginPage 05: Successful login with JSON data from nested JSON file"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Login Functionality"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[[Step] Navigating to login page]]>
+            </line>
+            <line>
+              <![CDATA[[Step] Entering username: ${username} and password: ${password}]]>
+            </line>
+            <line>
+              <![CDATA[[Step] Address info: street=3 Marshall St, city=Irvington, state=NJ, zip=07111]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:com.automation.runners.TestRunner@6ae5aa72]" started-at="2026-04-24T12:06:31 EDT" name="tearDownClass" finished-at="2026-04-24T12:06:31 EDT" duration-ms="77" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+        <test-method is-config="true" signature="afterSuite()[pri:0, instance:com.automation.runners.TestRunner@6ae5aa72]" started-at="2026-04-24T12:06:31 EDT" name="afterSuite" finished-at="2026-04-24T12:06:31 EDT" duration-ms="264" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterSuite -->
+      </class> <!-- com.automation.runners.TestRunner -->
+    </test> <!-- Login Tests -->
+  </suite> <!-- Playwright BDD TestNG Suite - UAT -->
+</testng-results>

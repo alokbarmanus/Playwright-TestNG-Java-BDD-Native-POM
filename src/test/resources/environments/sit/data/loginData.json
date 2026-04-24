@@ -1,0 +1,16 @@
+[
+  {
+    "userType": "Admin User",
+    "username": "Admin",
+    "password": "admin123",
+    "role": "Admin",
+    "expectedLandingPage": "dashboard"
+  },
+  {
+    "userType": "LOB User",
+    "username": "Admin",
+    "password": "admin123",
+    "role": "Admin",
+    "expectedLandingPage": "dashboard"
+  }
+]

@@ -1,0 +1,26 @@
+[
+	{
+		"loginData": {
+			"username": "Admin",
+			"password": "admin123"
+		},
+		"addressData": {
+			"street": "123 Main St",
+			"city": "Anytown",
+			"state": "CA",
+			"zip": "12345"
+		}
+	},
+	{
+		"loginData": {
+			"username": "Admin",
+			"password": "admin123"
+		},
+		"addressData": {
+			"street": "3 Marshall St",
+			"city": "Irvington",
+			"state": "NJ",
+			"zip": "07111"
+		}
+	}
+]

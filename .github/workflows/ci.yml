@@ -1,0 +1,64 @@
+name: Build and Test
+
+on:
+  push:
+    branches:
+      - '**'
+  pull_request:
+    branches:
+      - '**'
+  workflow_dispatch:
+    inputs:
+      env:
+        description: 'Environment to run tests against'
+        required: true
+        default: 'dev'
+        type: choice
+        options:
+          - dev
+          - sit
+          - uat
+      executor:
+        description: 'Test execution mode'
+        required: true
+        default: 'sequential'
+        type: choice
+        options:
+          - sequential
+          - parallel
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+      - name: Set up JDK 21
+        uses: actions/setup-java@v4
+        with:
+          distribution: 'temurin'
+          java-version: '21'
+      - name: Build with Maven
+        run: mvn clean compile
+
+  test:
+    needs: build
+    runs-on: ubuntu-latest
+    env:
+      ENV: ${{ github.event.inputs.env || 'dev' }}
+      EXECUTOR: ${{ github.event.inputs.executor || 'sequential' }}
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+      - name: Set up JDK 21
+        uses: actions/setup-java@v4
+        with:
+          distribution: 'temurin'
+          java-version: '21'
+      - name: Run Tests
+        run: |
+          if [ "$EXECUTOR" = "parallel" ]; then
+            mvn clean test -Denv=$ENV -Ddataproviderthreadcount=4
+          else
+            mvn clean test -Denv=$ENV
+          fi

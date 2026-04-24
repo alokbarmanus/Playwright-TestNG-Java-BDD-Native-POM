@@ -1,0 +1,27 @@
+{
+  "validCredentials": [
+    {
+      "username": "Admin",
+      "password": "admin123",
+      "role": "Admin",
+      "expectedLandingPage": "dashboard"
+    }
+  ],
+  "invalidCredentials": [
+    {
+      "username": "invalid_user",
+      "password": "invalid_pass",
+      "expectedError": "Invalid credentials"
+    },
+    {
+      "username": "Admin",
+      "password": "wrongpass",
+      "expectedError": "Invalid credentials"
+    }
+  ],
+  "emptyCredentials": {
+    "username": "",
+    "password": "",
+    "expectedError": "Required"
+  }
+}
