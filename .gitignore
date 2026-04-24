@@ -1,0 +1,30 @@
+# Compiled output
+target/
+*.class
+
+# Maven wrapper
+.mvn/wrapper/maven-wrapper.jar
+
+# IDE files
+.idea/
+*.iml
+*.iws
+*.ipr
+.vscode/
+*.launch
+.settings/
+.project
+.classpath
+.factorypath
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Playwright browser binaries (downloaded by `mvn exec:java -e -D exec.mainClass=com.microsoft.playwright.CLI -D exec.args="install"`)
+# Uncomment if you do NOT want to commit them:
+# ~/.cache/ms-playwright/
+
+# Test reports (generated at runtime)
+target/cucumber-reports/
+target/surefire-reports/
