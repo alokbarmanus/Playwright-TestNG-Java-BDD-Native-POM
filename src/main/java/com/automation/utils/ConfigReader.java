@@ -45,6 +45,12 @@ public class ConfigReader {
         properties.putAll(appProps);
         properties.putAll(envProps);
 
+        // Force headless mode in GitHub Actions
+        if (System.getenv("GITHUB_ACTIONS") != null && System.getenv("GITHUB_ACTIONS").equalsIgnoreCase("true")) {
+            properties.setProperty("headless", "true");
+            System.out.println("[ConfigReader] Detected GitHub Actions CI: Forcing headless mode");
+        }
+
         // Store resolved env name so callers can read it
         properties.setProperty("active.env", env);
     }

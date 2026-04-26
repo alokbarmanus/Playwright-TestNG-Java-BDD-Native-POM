@@ -35,6 +35,7 @@ public class LoginPageObjects extends BasePage {
     /** Navigates to the login page using the URL from config. */
     public void navigateToLoginPage() {
         navigateTo(ConfigReader.getBaseUrl());
+        page.waitForTimeout(2000);
         waitForDomContentLoaded();
         waitForVisible(usernameInput);
     }
