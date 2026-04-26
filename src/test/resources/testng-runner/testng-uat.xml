@@ -1,21 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 
-<suite name="Playwright BDD TestNG Suite - UAT" parallel="false" thread-count="4" verbose="1">
+<suite name="Playwright BDD TestNG Suite-UAT" parallel="methods" thread-count="4" verbose="1">
+
     <listeners>
-        <listener class-name="com.automation.listeners.EnvironmentListener"/>
+        <listener class-name="com.automation.utils.CustomReporter"/>
         <listener class-name="com.automation.listeners.ExtentReportListener"/>
     </listeners>
+
     <test name="UAT_Execution">
         <parameter name="scenario.file.loc" value="src/test/resources/features"/>
         <parameter name="txt.scenario.file.ext" value=".feature"/>
         <parameter name="step.provider.pkg" value="com.automation.stepdefinitions"/>
         <parameter name="env.resources" value="src/test/resources/environments/uat"/>
-        <groups>
-            <run>
-                <include name="regression"/>
-            </run>
-        </groups>
+
+        <parameter name="parallel.scenarios" value="true"/>
+        <parameter name="cucumber.filter.tags" value="@regression"/>
+
         <classes>
             <class name="com.automation.runners.TestRunner"/>
         </classes>

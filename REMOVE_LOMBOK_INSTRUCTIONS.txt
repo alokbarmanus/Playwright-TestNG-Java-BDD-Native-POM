@@ -1,0 +1,15 @@
+You are seeing the error:
+Can't initialize javac processor due to (most likely) a class loader problem: java.lang.NoClassDefFoundError: Could not initialize class lombok.javac.Javac
+
+But you are not using Lombok in your code or pom.xml. This is likely because your IDE or build tool is picking up Lombok from the Eclipse/IDEA .factorypath file.
+
+To resolve:
+1. Delete the .factorypath file in your project root (it contains a reference to lombok-1.18.26.jar).
+2. Restart your IDE and do a Maven > Update Project (or mvn clean install).
+3. If you use Eclipse, also check for any Lombok plugin in Eclipse settings and remove/disable it.
+
+No code refactor is needed in your Java files.
+
+---
+
+This file is safe to delete after you have resolved the issue.

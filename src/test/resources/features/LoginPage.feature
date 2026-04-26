@@ -19,7 +19,7 @@ Feature: Login Functionality
     Then an error message "Invalid credentials" should be displayed
 
   @negative @login_outline
-  Scenario Outline: LoginPage 03 Login attempts with multiple invalid credential sets
+  Scenario Outline: LoginPage 03: Login attempts with multiple invalid credential sets
     When the user enters username "<username>" and password "<password>"
     Then an error message "<error_message>" should be displayed
 

@@ -35,8 +35,22 @@ public class LoginPageObjects extends BasePage {
     /** Navigates to the login page using the URL from config. */
     public void navigateToLoginPage() {
         navigateTo(ConfigReader.getBaseUrl());
+        page.waitForTimeout(2000);
         waitForDomContentLoaded();
         waitForVisible(usernameInput);
+    }
+
+    public void navigateToLoginPageWithSecondBrowser() {
+        navigateToSecondBrowser(ConfigReader.getBaseUrl());
+        waitForDomContentLoaded();
+        waitForVisible(usernameInput);
+    }
+
+    public void testSimultaneousContexts() {
+        // Sample: Both contexts navigate to login page
+        page.navigate("https://opensource-demo.orangehrmlive.com/web/index.php/auth/login");
+        page2.navigate("https://opensource-demo.orangehrmlive.com/web/index.php/auth/login");
+        // Add your message send/receive logic here
     }
 
     /** Clears and fills the username field. */
@@ -64,6 +78,7 @@ public class LoginPageObjects extends BasePage {
         enterUsername(username);
         enterPassword(password);
         clickLoginButton();
+        page.waitForTimeout(3000); // Small delay to mimic real user typing and allow any dynamic validation to occur
     }
 
     // -------------------------------------------------------------------------

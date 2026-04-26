@@ -1,0 +1,49 @@
+# BDD Playwright Framework Improvement Roadmap
+
+This file lists prioritized recommendations to bring this framework to industry-leading standards. Check off each item as you implement it.
+
+---
+
+## 1. Playwright Trace & Video Artifacts
+- [ ] Enable Playwright trace and video recording for all or failed scenarios
+- [ ] Attach traces/videos to reports for easier debugging
+
+## 2. Test Data Management
+- [ ] Add support for parameterized data-driven tests from CSV/Excel/DB
+- [ ] Separate and version-control test data
+- [ ] Mask sensitive data in logs/reports
+
+## 3. Reporting Enhancements
+- [ ] Attach logs, screenshots, and Playwright traces/videos directly to ExtentReports and Cucumber HTML/JSON reports
+- [ ] Add links from failed steps to their artifacts
+
+## 4. Parallel & Distributed Execution
+- [ ] Add support for test sharding and distributed execution (e.g., Selenium Grid, Selenoid, or cloud providers)
+
+## 5. CI/CD Integration
+- [ ] Upload all artifacts (reports, screenshots, traces) as CI outputs
+- [ ] Integrate notifications (Slack/Teams) and dashboards for test results
+
+## 6. Advanced Page Object Model
+- [ ] Refactor for component-based page objects and reusable UI widgets
+
+## 7. Environment & Secrets Management
+- [ ] Allow environment variables to override config for CI/CD
+- [ ] Integrate with a secrets manager or encrypted properties for sensitive data
+
+## 8. Debugging Utilities
+- [ ] Add Playwright Inspector/debug mode toggle
+- [ ] Add rerun-failed-scenarios utility
+
+## 9. Lifecycle Hooks
+- [ ] Add suite-level hooks (e.g., DB seeding/cleanup)
+- [ ] Add after-step hooks for screenshots/logs on every step
+
+## 10. Maintainability & Quality
+- [ ] Add static analysis/linting for Gherkin and Java
+- [ ] Integrate code coverage tools (e.g., JaCoCo)
+- [ ] Enforce tag-based test selection in CI
+
+---
+
+Update this file as you make progress or add new ideas!

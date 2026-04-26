@@ -1,0 +1,391 @@
+<html>
+<head>
+<title>TestNG:  DEV_Execution</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>DEV_Execution</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>22/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Sat Apr 25 23:16:09 EDT 2026</td>
+</tr>
+<tr><td>Total time:</td><td>78 seconds (78014 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.automation.runners.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.automation.runners.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Dashboard page 05: All Quick Launch shortcuts are visible", "Dashboard Page Functionality"<br/>
+<a href="#Output-1814112705" onClick='toggleBox("Output-1814112705", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1814112705" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1814112705">
+[Step] Login as Admin / admin123<br/>
+[Step] Waiting for dashboard page<br/>
+[Step] Quick Launch shortcut visible: Leave List<br/>
+</div>
+</td>
+<td></td>
+<td>40</td>
+<td>com.automation.runners.TestRunner@645aa696</td></tr>
+<tr>
+<td title='com.automation.runners.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.automation.runners.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Dashboard page 05: All Quick Launch shortcuts are visible", "Dashboard Page Functionality"<br/>
+<a href="#Output-1710337136" onClick='toggleBox("Output-1710337136", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1710337136" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1710337136">
+[Step] Login as Admin / admin123<br/>
+[Step] Waiting for dashboard page<br/>
+[Step] Quick Launch shortcut visible: Assign Leave<br/>
+</div>
+</td>
+<td></td>
+<td>39</td>
+<td>com.automation.runners.TestRunner@645aa696</td></tr>
+<tr>
+<td title='com.automation.runners.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.automation.runners.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Dashboard page 03: Top navigation menu items are visible", "Dashboard Page Functionality"<br/>
+<a href="#Output-1772588163" onClick='toggleBox("Output-1772588163", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1772588163" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1772588163">
+[Step] Login as Admin / admin123<br/>
+[Step] Waiting for dashboard page<br/>
+[Step] Menu item visible: Leave<br/>
+</div>
+</td>
+<td></td>
+<td>57</td>
+<td>com.automation.runners.TestRunner@645aa696</td></tr>
+<tr>
+<td title='com.automation.runners.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.automation.runners.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "LoginPage 01: Successful login with valid credentials", "Login Functionality"<br/>
+<a href="#Output-1078185700" onClick='toggleBox("Output-1078185700", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1078185700" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1078185700">
+[Step] Navigating to login page<br/>
+[Step] Entering username: Admin and password: admin123<br/>
+[Step] User redirected to dashboard<br/>
+[Step] Dashboard header displayed: Dashboard<br/>
+</div>
+</td>
+<td></td>
+<td>28</td>
+<td>com.automation.runners.TestRunner@645aa696</td></tr>
+<tr>
+<td title='com.automation.runners.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.automation.runners.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "LoginPage 04: Successful login with plain JSON data", "Login Functionality"<br/>
+<a href="#Output-1968912914" onClick='toggleBox("Output-1968912914", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1968912914" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1968912914">
+[Step] Navigating to login page<br/>
+[Step] Entering username: ${username} and password: ${password}<br/>
+[Step] User redirected to dashboard<br/>
+[Step] Dashboard header displayed: Dashboard<br/>
+</div>
+</td>
+<td></td>
+<td>16</td>
+<td>com.automation.runners.TestRunner@645aa696</td></tr>
+<tr>
+<td title='com.automation.runners.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.automation.runners.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Dashboard page 03: Top navigation menu items are visible", "Dashboard Page Functionality"<br/>
+<a href="#Output-1224865130" onClick='toggleBox("Output-1224865130", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1224865130" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1224865130">
+[Step] Login as Admin / admin123<br/>
+[Step] Waiting for dashboard page<br/>
+[Step] Menu item visible: PIM<br/>
+</div>
+</td>
+<td></td>
+<td>38</td>
+<td>com.automation.runners.TestRunner@645aa696</td></tr>
+<tr>
+<td title='com.automation.runners.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.automation.runners.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "LoginPage 05: Successful login with JSON data as Map", "Login Functionality"<br/>
+<a href="#Output-1852294796" onClick='toggleBox("Output-1852294796", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1852294796" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1852294796">
+[Step] Navigating to login page<br/>
+[Step] Login using dataRef: ${loginData}<br/>
+[Step] Address info: street=123 Main St, city=Anytown, state=CA, zip=12345<br/>
+</div>
+</td>
+<td></td>
+<td>15</td>
+<td>com.automation.runners.TestRunner@645aa696</td></tr>
+<tr>
+<td title='com.automation.runners.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.automation.runners.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Dashboard page 05: All Quick Launch shortcuts are visible", "Dashboard Page Functionality"<br/>
+<a href="#Output-1832152216" onClick='toggleBox("Output-1832152216", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1832152216" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1832152216">
+[Step] Login as Admin / admin123<br/>
+[Step] Waiting for dashboard page<br/>
+[Step] Quick Launch shortcut visible: My Leave<br/>
+</div>
+</td>
+<td></td>
+<td>20</td>
+<td>com.automation.runners.TestRunner@645aa696</td></tr>
+<tr>
+<td title='com.automation.runners.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.automation.runners.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "LoginPage 03: Login attempts with multiple invalid credential sets", "Login Functionality"<br/>
+<a href="#Output-1529876894" onClick='toggleBox("Output-1529876894", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1529876894" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1529876894">
+[Step] Navigating to login page<br/>
+[Step] Entering username: invalid_user and password: admin123<br/>
+[Step] Error message displayed: Invalid credentials<br/>
+</div>
+</td>
+<td></td>
+<td>27</td>
+<td>com.automation.runners.TestRunner@645aa696</td></tr>
+<tr>
+<td title='com.automation.runners.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.automation.runners.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Dashboard page 03: Top navigation menu items are visible", "Dashboard Page Functionality"<br/>
+<a href="#Output-1129181282" onClick='toggleBox("Output-1129181282", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1129181282" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1129181282">
+[Step] Login as Admin / admin123<br/>
+[Step] Waiting for dashboard page<br/>
+[Step] Menu item visible: Time<br/>
+</div>
+</td>
+<td></td>
+<td>38</td>
+<td>com.automation.runners.TestRunner@645aa696</td></tr>
+<tr>
+<td title='com.automation.runners.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.automation.runners.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Dashboard page 05: All Quick Launch shortcuts are visible", "Dashboard Page Functionality"<br/>
+<a href="#Output-849782486" onClick='toggleBox("Output-849782486", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-849782486" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-849782486">
+[Step] Login as Admin / admin123<br/>
+[Step] Waiting for dashboard page<br/>
+[Step] Quick Launch shortcut visible: Apply Leave<br/>
+</div>
+</td>
+<td></td>
+<td>28</td>
+<td>com.automation.runners.TestRunner@645aa696</td></tr>
+<tr>
+<td title='com.automation.runners.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.automation.runners.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "LoginPage 05: Successful login with JSON data from nested JSON file", "Login Functionality"<br/>
+<a href="#Output-664957904" onClick='toggleBox("Output-664957904", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-664957904" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-664957904">
+[Step] Navigating to login page<br/>
+[Step] Entering username: ${username} and password: ${password}<br/>
+[Step] Address info: street=3 Marshall St, city=Irvington, state=NJ, zip=07111<br/>
+</div>
+</td>
+<td></td>
+<td>18</td>
+<td>com.automation.runners.TestRunner@645aa696</td></tr>
+<tr>
+<td title='com.automation.runners.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.automation.runners.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Dashboard page 01: Dashboard page heading is displayed", "Dashboard Page Functionality"<br/>
+<a href="#Output-1097646457" onClick='toggleBox("Output-1097646457", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1097646457" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1097646457">
+[Step] Login as Admin / admin123<br/>
+[Step] Waiting for dashboard page<br/>
+[Step] Dashboard heading is visible<br/>
+[Step] Dashboard heading displayed: Dashboard<br/>
+</div>
+</td>
+<td></td>
+<td>38</td>
+<td>com.automation.runners.TestRunner@645aa696</td></tr>
+<tr>
+<td title='com.automation.runners.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.automation.runners.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Dashboard page 03: Top navigation menu items are visible", "Dashboard Page Functionality"<br/>
+<a href="#Output-629819228" onClick='toggleBox("Output-629819228", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-629819228" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-629819228">
+[Step] Login as Admin / admin123<br/>
+[Step] Waiting for dashboard page<br/>
+[Step] Menu item visible: Admin<br/>
+</div>
+</td>
+<td></td>
+<td>58</td>
+<td>com.automation.runners.TestRunner@645aa696</td></tr>
+<tr>
+<td title='com.automation.runners.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.automation.runners.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Dashboard page 04: Quick Launch widget is displayed", "Dashboard Page Functionality"<br/>
+<a href="#Output-823335401" onClick='toggleBox("Output-823335401", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-823335401" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-823335401">
+[Step] Login as Admin / admin123<br/>
+[Step] Waiting for dashboard page<br/>
+[Step] Quick Launch widget is visible<br/>
+</div>
+</td>
+<td></td>
+<td>38</td>
+<td>com.automation.runners.TestRunner@645aa696</td></tr>
+<tr>
+<td title='com.automation.runners.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.automation.runners.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Dashboard page 02: Top navigation bar is visible on the dashboard", "Dashboard Page Functionality"<br/>
+<a href="#Output-642380115" onClick='toggleBox("Output-642380115", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-642380115" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-642380115">
+[Step] Login as Admin / admin123<br/>
+[Step] Waiting for dashboard page<br/>
+[Step] Top navigation bar is visible<br/>
+</div>
+</td>
+<td></td>
+<td>58</td>
+<td>com.automation.runners.TestRunner@645aa696</td></tr>
+<tr>
+<td title='com.automation.runners.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.automation.runners.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "LoginPage 02: Login with invalid credentials", "Login Functionality"<br/>
+<a href="#Output-746049325" onClick='toggleBox("Output-746049325", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-746049325" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-746049325">
+[Step] Navigating to login page<br/>
+[Step] Entering username: invalid_user and password: invalid_pass<br/>
+[Step] Error message displayed: Invalid credentials<br/>
+</div>
+</td>
+<td></td>
+<td>19</td>
+<td>com.automation.runners.TestRunner@645aa696</td></tr>
+<tr>
+<td title='com.automation.runners.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.automation.runners.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Dashboard page 05: All Quick Launch shortcuts are visible", "Dashboard Page Functionality"<br/>
+<a href="#Output-1245722746" onClick='toggleBox("Output-1245722746", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1245722746" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1245722746">
+[Step] Login as Admin / admin123<br/>
+[Step] Waiting for dashboard page<br/>
+[Step] Quick Launch shortcut visible: My Timesheet<br/>
+</div>
+</td>
+<td></td>
+<td>29</td>
+<td>com.automation.runners.TestRunner@645aa696</td></tr>
+<tr>
+<td title='com.automation.runners.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.automation.runners.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "LoginPage 03: Login attempts with multiple invalid credential sets", "Login Functionality"<br/>
+<a href="#Output-1309429271" onClick='toggleBox("Output-1309429271", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1309429271" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1309429271">
+[Step] Navigating to login page<br/>
+[Step] Entering username:  and password: <br/>
+[Step] Error message displayed: Required<br/>
+</div>
+</td>
+<td></td>
+<td>12</td>
+<td>com.automation.runners.TestRunner@645aa696</td></tr>
+<tr>
+<td title='com.automation.runners.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.automation.runners.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Dashboard page 03: Top navigation menu items are visible", "Dashboard Page Functionality"<br/>
+<a href="#Output-552128149" onClick='toggleBox("Output-552128149", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-552128149" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-552128149">
+[Step] Login as Admin / admin123<br/>
+[Step] Waiting for dashboard page<br/>
+[Step] Menu item visible: Dashboard<br/>
+</div>
+</td>
+<td></td>
+<td>40</td>
+<td>com.automation.runners.TestRunner@645aa696</td></tr>
+<tr>
+<td title='com.automation.runners.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.automation.runners.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Dashboard page 05: All Quick Launch shortcuts are visible", "Dashboard Page Functionality"<br/>
+<a href="#Output-626002926" onClick='toggleBox("Output-626002926", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-626002926" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-626002926">
+[Step] Login as Admin / admin123<br/>
+[Step] Waiting for dashboard page<br/>
+[Step] Quick Launch shortcut visible: Timesheets<br/>
+</div>
+</td>
+<td></td>
+<td>21</td>
+<td>com.automation.runners.TestRunner@645aa696</td></tr>
+<tr>
+<td title='com.automation.runners.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.automation.runners.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "LoginPage 03: Login attempts with multiple invalid credential sets", "Login Functionality"<br/>
+<a href="#Output-1951920488" onClick='toggleBox("Output-1951920488", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1951920488" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1951920488">
+[Step] Navigating to login page<br/>
+[Step] Entering username: Admin and password: wrongpass<br/>
+[Step] Error message displayed: Invalid credentials<br/>
+</div>
+</td>
+<td></td>
+<td>13</td>
+<td>com.automation.runners.TestRunner@645aa696</td></tr>
+</table><p>
+</body>
+</html>

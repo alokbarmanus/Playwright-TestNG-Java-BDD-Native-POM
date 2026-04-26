@@ -11,8 +11,6 @@
     <name>Playwright-TestNG-Java-BDD-Native-POM</name>
 
     <properties>
-        <maven.compiler.source>25</maven.compiler.source>
-        <maven.compiler.target>25</maven.compiler.target>
         <maven.compiler.release>25</maven.compiler.release>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <playwright.version>1.44.0</playwright.version>
@@ -22,7 +20,12 @@
     </properties>
 
     <dependencies>
-
+                <!-- Apache POI for Excel reading -->
+                <dependency>
+                    <groupId>org.apache.poi</groupId>
+                    <artifactId>poi-ooxml</artifactId>
+                    <version>5.2.5</version>
+                </dependency>
         <!-- Playwright -->
         <dependency>
             <groupId>com.microsoft.playwright</groupId>
@@ -78,11 +81,7 @@
             <artifactId>extentreports</artifactId>
             <version>5.1.2</version>
         </dependency>
-        <dependency>
-            <groupId>tech.grasshopper</groupId>
-            <artifactId>extentreports-cucumber7-adapter</artifactId>
-            <version>1.14.0</version>
-        </dependency>
+        <!-- extentreports-cucumber7-adapter removed to avoid duplicate/conflicting reporting -->
     </dependencies>
 
     <build>
@@ -95,7 +94,7 @@
                 <version>3.2.5</version>
                 <configuration>
                     <suiteXmlFiles>
-                        <suiteXmlFile>testng.xml</suiteXmlFile>
+                        <suiteXmlFile>${testng.suiteXmlFile}</suiteXmlFile>
                     </suiteXmlFiles>
                 </configuration>
             </plugin>
@@ -111,6 +110,46 @@
             </plugin>
 
         </plugins>
+
     </build>
+
+    <profiles>
+        <profile>
+            <id>dev</id>
+            <activation>
+                <property>
+                    <name>env</name>
+                    <value>dev</value>
+                </property>
+            </activation>
+            <properties>
+                <testng.suiteXmlFile>src/test/resources/testng-runner/testng-dev.xml</testng.suiteXmlFile>
+            </properties>
+        </profile>
+        <profile>
+            <id>sit</id>
+            <activation>
+                <property>
+                    <name>env</name>
+                    <value>sit</value>
+                </property>
+            </activation>
+            <properties>
+                <testng.suiteXmlFile>src/test/resources/testng-runner/testng-sit.xml</testng.suiteXmlFile>
+            </properties>
+        </profile>
+        <profile>
+            <id>uat</id>
+            <activation>
+                <property>
+                    <name>env</name>
+                    <value>uat</value>
+                </property>
+            </activation>
+            <properties>
+                <testng.suiteXmlFile>src/test/resources/testng-runner/testng-uat.xml</testng.suiteXmlFile>
+            </properties>
+        </profile>
+    </profiles>
 
 </project>
