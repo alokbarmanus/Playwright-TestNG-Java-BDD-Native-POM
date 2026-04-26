@@ -39,6 +39,19 @@ public class LoginPageObjects extends BasePage {
         waitForVisible(usernameInput);
     }
 
+    public void navigateToLoginPageWithSecondBrowser() {
+        navigateToSecondBrowser(ConfigReader.getBaseUrl());
+        waitForDomContentLoaded();
+        waitForVisible(usernameInput);
+    }
+
+    public void testSimultaneousContexts() {
+        // Sample: Both contexts navigate to login page
+        page.navigate("https://opensource-demo.orangehrmlive.com/web/index.php/auth/login");
+        page2.navigate("https://opensource-demo.orangehrmlive.com/web/index.php/auth/login");
+        // Add your message send/receive logic here
+    }
+
     /** Clears and fills the username field. */
     public void enterUsername(String username) {
         fillField(usernameInput, username);

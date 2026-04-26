@@ -13,9 +13,11 @@ import com.microsoft.playwright.options.LoadState;
 public class BasePage {
 
     protected final Page page;
+    protected final Page page2;
 
     public BasePage() {
         this.page = PlaywrightManager.getPage();
+        this.page2 = PlaywrightManager.getPage2();
     }
 
     /**
@@ -24,7 +26,10 @@ public class BasePage {
     public Page getPage() {
         return page;
     }
-
+    
+    public Page getPage2() {
+        return page2;
+    }
     // -------------------------------------------------------------------------
     // Navigation helpers
     // -------------------------------------------------------------------------
@@ -32,6 +37,10 @@ public class BasePage {
     /** Navigates to the given URL and waits for DOMContentLoaded. */
     public void navigateTo(String url) {
         page.navigate(url);
+    }
+
+    public void navigateToSecondBrowser(String url) {
+        page2.navigate(url);
     }
 
     /** Waits until the network is idle (useful after form submissions). */

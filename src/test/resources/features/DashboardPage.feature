@@ -86,7 +86,7 @@ Feature: Dashboard Page Functionality
   #   When the user clicks the "Assign Leave" Quick Launch shortcut
   #   Then the page URL should contain "viewLeaveList"
 
-  # @dashboard_quick_launch @navigation @dashboardpage08
-  # Scenario: Dashboard page 08: Clicking Timesheets shortcut navigates to the Timesheets page
-  #   When the user clicks the "Timesheets" Quick Launch shortcut
-  #   Then the page URL should contain "viewMyTimesheetList"
+  @dashboard_quick_launch @navigation @dashboardpage08
+  Scenario: Dashboard page 08: Clicking Timesheets shortcut navigates to the Timesheets page
+    When the user clicks the "Timesheets" Quick Launch shortcut
+    Then the page URL should contain "viewMyTimesheetList"

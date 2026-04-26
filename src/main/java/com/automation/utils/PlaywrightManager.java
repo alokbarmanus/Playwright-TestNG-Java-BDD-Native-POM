@@ -19,8 +19,10 @@ public class PlaywrightManager {
 
     private static final ThreadLocal<Playwright>      playwrightTL      = new ThreadLocal<>();
     private static final ThreadLocal<Browser>         browserTL         = new ThreadLocal<>();
-    private static final ThreadLocal<BrowserContext>  browserContextTL  = new ThreadLocal<>();
-    private static final ThreadLocal<Page>            pageTL            = new ThreadLocal<>();
+    private static final ThreadLocal<BrowserContext>  browserContext1TL = new ThreadLocal<>();
+    private static final ThreadLocal<BrowserContext>  browserContext2TL = new ThreadLocal<>();
+    private static final ThreadLocal<Page>            page1TL           = new ThreadLocal<>();
+    private static final ThreadLocal<Page>            page2TL           = new ThreadLocal<>();
 
     private PlaywrightManager() {
         // utility class — no instantiation
@@ -59,26 +61,43 @@ public class PlaywrightManager {
                 .setViewportSize(1280, 720)
                 .setIgnoreHTTPSErrors(true);
 
-        BrowserContext context = browser.newContext(contextOptions);
-        context.setDefaultTimeout(ConfigReader.getDefaultTimeout());
-        browserContextTL.set(context);
+        // Create two contexts and pages
+        BrowserContext context1 = browser.newContext(contextOptions);
+        context1.setDefaultTimeout(ConfigReader.getDefaultTimeout());
+        browserContext1TL.set(context1);
+        Page page1 = context1.newPage();
+        page1TL.set(page1);
 
-        Page page = context.newPage();
-        pageTL.set(page);
+        BrowserContext context2 = browser.newContext(contextOptions);
+        context2.setDefaultTimeout(ConfigReader.getDefaultTimeout());
+        browserContext2TL.set(context2);
+        Page page2 = context2.newPage();
+        page2TL.set(page2);
     }
 
     // -------------------------------------------------------------------------
     // Accessors
     // -------------------------------------------------------------------------
 
-    /** Returns the {@link Page} bound to the current thread. */
+
+    /** Returns the first {@link Page} bound to the current thread. */
     public static Page getPage() {
-        return pageTL.get();
+        return page1TL.get();
     }
 
-    /** Returns the {@link BrowserContext} bound to the current thread. */
-    public static BrowserContext getBrowserContext() {
-        return browserContextTL.get();
+    /** Returns the second {@link Page} bound to the current thread. */
+    public static Page getPage2() {
+        return page2TL.get();
+    }
+
+    /** Returns the first {@link BrowserContext} bound to the current thread. */
+    public static BrowserContext getBrowserContext1() {
+        return browserContext1TL.get();
+    }
+
+    /** Returns the second {@link BrowserContext} bound to the current thread. */
+    public static BrowserContext getBrowserContext2() {
+        return browserContext2TL.get();
     }
 
     /** Returns the {@link Browser} bound to the current thread. */
@@ -95,8 +114,10 @@ public class PlaywrightManager {
      * all ThreadLocal references to prevent memory leaks.
      */
     public static void closePlaywright() {
-        closeSafely(pageTL);
-        closeSafely(browserContextTL);
+        closeSafely(page1TL);
+        closeSafely(page2TL);
+        closeSafely(browserContext1TL);
+        closeSafely(browserContext2TL);
         closeSafely(browserTL);
         closeSafely(playwrightTL);
     }

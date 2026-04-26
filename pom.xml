@@ -20,6 +20,12 @@
     </properties>
 
     <dependencies>
+                <!-- Apache POI for Excel reading -->
+                <dependency>
+                    <groupId>org.apache.poi</groupId>
+                    <artifactId>poi-ooxml</artifactId>
+                    <version>5.2.5</version>
+                </dependency>
         <!-- Playwright -->
         <dependency>
             <groupId>com.microsoft.playwright</groupId>

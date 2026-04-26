@@ -67,7 +67,7 @@ public class LoginPageStepDefinitions {
         } catch (Exception ex) {
             ExtentManager.getTest().warning("Could not capture login screenshot: " + ex.getMessage());
         }*/
-
+        ExtentManager.logInfo("the user enters username \"username\" and password \"password\"");
         // Example: Log a pass message for successful login step
         ExtentManager.getTest().pass("Login step executed successfully.");
     }
@@ -78,6 +78,8 @@ public class LoginPageStepDefinitions {
         ExtentManager.getTest().info("Login using dataRef: " + dataRef);
         Reporter.log("[Step] Login using dataRef: " + dataRef, true);
         pom.getLoginPage().login(loginData.get("username"), loginData.get("password"));
+        ExtentManager.logInfo("the user enters username and password from {loginData} to login application");
+        ExtentManager.getTest().pass("Login step executed successfully with logindata: " + dataRef);
     }
 
     // @When("the user enters address information from {string} in the form")
@@ -113,8 +115,9 @@ public class LoginPageStepDefinitions {
     public void theUserShouldBeRedirectedToTheDashboard() {
         try {
             assertThat(pom.getDashboardPage().getDashboardHeaderLocator()).isVisible();
-            ExtentManager.getTest().pass("User redirected to dashboard");
             Reporter.log("[Step] User redirected to dashboard", true);
+            ExtentManager.logInfo("the user should be redirected to the dashboard");
+            ExtentManager.getTest().pass("User redirected to dashboard");
         } catch (AssertionError e) {
             ExtentManager.getTest().fail("User not redirected to dashboard: " + e.getMessage());
             Reporter.log("[FAIL] User not redirected to dashboard: " + e.getMessage(), true);
@@ -127,8 +130,10 @@ public class LoginPageStepDefinitions {
         try {
             assertThat(pom.getDashboardPage().getDashboardHeaderLocator())
                     .hasText(context.resolve(expectedHeader));
-            ExtentManager.getTest().pass("Dashboard header displayed: " + expectedHeader);
             Reporter.log("[Step] Dashboard header displayed: " + expectedHeader, true);
+            ExtentManager.logInfo("the dashboard header should display: "+expectedHeader);
+            ExtentManager.getTest().pass("Dashboard header displayed: " + expectedHeader);
+            
         } catch (AssertionError e) {
             ExtentManager.getTest().fail("Dashboard header not displayed: " + e.getMessage());
             Reporter.log("[FAIL] Dashboard header not displayed: " + e.getMessage(), true);
@@ -141,6 +146,7 @@ public class LoginPageStepDefinitions {
         try {
             assertThat(pom.getLoginPage().getErrorLocator())
                     .containsText(context.resolve(expectedError));
+            ExtentManager.logInfo("an error message should be displayed: "+expectedError);
             ExtentManager.getTest().pass("Error message displayed: " + expectedError);
             Reporter.log("[Step] Error message displayed: " + expectedError, true);
         } catch (AssertionError e) {

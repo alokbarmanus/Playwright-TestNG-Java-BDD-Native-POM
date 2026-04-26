@@ -26,7 +26,8 @@ import org.testng.annotations.DataProvider;
         "pretty",
         "html:target/cucumber-reports/cucumber.html",
         "json:target/cucumber-reports/cucumber.json",
-        "junit:target/cucumber-reports/cucumber.xml"
+        "junit:target/cucumber-reports/cucumber.xml",
+        "rerun:target/rerun.txt"
     },
     monochrome = true
 )

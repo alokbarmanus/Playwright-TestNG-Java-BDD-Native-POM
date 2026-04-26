@@ -1,0 +1,43 @@
+# Rerun Failed Scenarios Utility - Setup Guide
+
+This document explains how to enable and use the rerun-failed-scenarios feature in your Cucumber + TestNG + Playwright Java framework.
+
+---
+
+## 1. Enable Cucumber Rerun Plugin
+- In your TestNG runner class, add the following to the `@CucumberOptions` plugin list:
+  - `"rerun:target/rerun.txt"`
+- This will output failed scenario locations to `target/rerun.txt` after a test run.
+
+## 2. Create a Rerun TestNG XML
+- Add a new file: `src/test/resources/testng-runner/testng-rerun.xml` with:
+
+```
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="Cucumber Rerun Suite">
+    <test name="Failed Scenarios">
+        <classes>
+            <class name="com.automation.runners.TestRunner">
+                <parameter name="cucumber.options" value="@target/rerun.txt"/>
+            </class>
+        </classes>
+    </test>
+</suite>
+```
+
+## 3. Run Rerun Suite
+- After your main test run, if there are failures, run:
+  - `mvn clean test -Dtestng.suiteXmlFile=src/test/resources/testng-runner/testng-rerun.xml`
+- This will execute only the failed scenarios listed in `target/rerun.txt`.
+
+## 4. (Optional) Automate in CI
+- Script your CI pipeline to:
+  - Run the main suite.
+  - If `target/rerun.txt` is not empty, run the rerun suite automatically.
+
+## 5. Clean Up
+- Clear or archive `target/rerun.txt` after each run if needed.
+
+---
+
+Update this file as you refine your rerun process!

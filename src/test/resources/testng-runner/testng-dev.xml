@@ -13,7 +13,7 @@
         <parameter name="step.provider.pkg" value="com.automation.stepdefinitions"/>
         <parameter name="env.resources" value="src/test/resources/environments/dev"/>
 
-        <parameter name="cucumber.filter.tags" value="@dashboardpage08"/>
+        <parameter name="cucumber.filter.tags" value="@regression"/>
 
         <classes>
             <class name="com.automation.runners.TestRunner"/>

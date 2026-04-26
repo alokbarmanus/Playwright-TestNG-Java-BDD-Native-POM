@@ -1,0 +1,10 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="Cucumber Rerun Suite">
+    <test name="Failed Scenarios">
+        <classes>
+            <class name="com.automation.runners.TestRunner">
+                <parameter name="cucumber.options" value="@target/rerun.txt"/>
+            </class>
+        </classes>
+    </test>
+</suite>
