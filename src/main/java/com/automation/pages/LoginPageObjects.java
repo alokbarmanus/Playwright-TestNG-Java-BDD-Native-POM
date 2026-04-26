@@ -64,6 +64,7 @@ public class LoginPageObjects extends BasePage {
         enterUsername(username);
         enterPassword(password);
         clickLoginButton();
+        page.waitForTimeout(3000); // Small delay to mimic real user typing and allow any dynamic validation to occur
     }
 
     // -------------------------------------------------------------------------

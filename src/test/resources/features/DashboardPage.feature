@@ -13,7 +13,7 @@ Feature: Dashboard Page Functionality
   # ---------------------------------------------------------------------------
 
   @smoke @dashboard_header
-  Scenario: Dashboard page heading is displayed
+  Scenario: Dashboard page 01: Dashboard page heading is displayed
     Then the dashboard page heading should be visible
     And the dashboard page heading should display "Dashboard"
 
@@ -22,7 +22,7 @@ Feature: Dashboard Page Functionality
   # ---------------------------------------------------------------------------
 
   @smoke @dashboard_nav
-  Scenario: Top navigation bar is visible on the dashboard
+  Scenario: Dashboard page 02: Top navigation bar is visible on the dashboard
     Then the top navigation bar should be visible
 
 #   @smoke @dashboard_nav
@@ -30,7 +30,7 @@ Feature: Dashboard Page Functionality
 #     Then the logged-in user name "Admin" should be visible in the top navigation
 
   @smoke @dashboard_nav
-  Scenario Outline: Top navigation menu items are visible
+  Scenario Outline: Dashboard page 03: Top navigation menu items are visible
     Then the top navigation should contain the menu item "<menuItem>"
 
     Examples:
@@ -46,11 +46,11 @@ Feature: Dashboard Page Functionality
   # ---------------------------------------------------------------------------
 
   @smoke @dashboard_quick_launch
-  Scenario: Quick Launch widget is displayed
+  Scenario: Dashboard page 04: Quick Launch widget is displayed
     Then the Quick Launch widget should be visible
 
   @smoke @dashboard_quick_launch
-  Scenario Outline: All Quick Launch shortcuts are visible
+  Scenario Outline: Dashboard page 05: All Quick Launch shortcuts are visible
     Then the Quick Launch shortcut "<shortcut>" should be visible
 
     Examples:
@@ -66,27 +66,27 @@ Feature: Dashboard Page Functionality
   # Dashboard widgets
   # ---------------------------------------------------------------------------
 
-#   @smoke @dashboard_widgets
-#   Scenario Outline: Key dashboard widgets are visible
-#     Then the dashboard widget "<widgetName>" should be visible
+  # @smoke @dashboard_widgets
+  # Scenario Outline: Dashboard page 06: Key dashboard widgets are visible
+  #   Then the dashboard widget "<widgetName>" should be visible
 
-#     Examples:
-#       | widgetName              |
-#       | Time at Work            |
-#       | My Actions              |
-#       | Today's Leave           |
-#       | Employees on Leave Today|
+  #   Examples:
+  #     | widgetName              |
+  #     | Time at Work            |
+  #     | My Actions              |
+  #     | Today's Leave           |
+  #     | Employees on Leave Today|
 
   # ---------------------------------------------------------------------------
   # Navigation from Quick Launch
   # ---------------------------------------------------------------------------
 
-#   @dashboard_quick_launch @navigation
-#   Scenario: Clicking Assign Leave shortcut navigates to the Assign Leave page
-#     When the user clicks the "Assign Leave" Quick Launch shortcut
-#     Then the page URL should contain "viewLeaveList"
+  # @dashboard_quick_launch @navigation
+  # Scenario: Dashboard page 07: Clicking Assign Leave shortcut navigates to the Assign Leave page
+  #   When the user clicks the "Assign Leave" Quick Launch shortcut
+  #   Then the page URL should contain "viewLeaveList"
 
-#   @dashboard_quick_launch @navigation
-#   Scenario: Clicking Timesheets shortcut navigates to the Timesheets page
-#     When the user clicks the "Timesheets" Quick Launch shortcut
-#     Then the page URL should contain "viewMyTimesheetList"
+  # @dashboard_quick_launch @navigation @dashboardpage08
+  # Scenario: Dashboard page 08: Clicking Timesheets shortcut navigates to the Timesheets page
+  #   When the user clicks the "Timesheets" Quick Launch shortcut
+  #   Then the page URL should contain "viewMyTimesheetList"

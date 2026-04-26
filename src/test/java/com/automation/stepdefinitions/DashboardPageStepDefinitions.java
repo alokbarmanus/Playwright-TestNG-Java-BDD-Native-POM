@@ -1,16 +1,16 @@
 package com.automation.stepdefinitions;
 
+import static org.testng.Assert.assertTrue;
+import org.testng.Reporter;
+
+import com.automation.utils.ExtentManager;
 import com.automation.utils.PageObjectManager;
+import static com.microsoft.playwright.assertions.PlaywrightAssertions.assertThat;
+
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
-
-import static com.microsoft.playwright.assertions.PlaywrightAssertions.assertThat;
-import static org.testng.Assert.assertTrue;
-import com.automation.utils.ExtentManager;
-import org.testng.Reporter;
-import com.microsoft.playwright.Page;
 
 /**
  * Step definitions for the Dashboard feature.
@@ -56,7 +56,6 @@ public class DashboardPageStepDefinitions {
             ExtentManager.getTest().pass("Dashboard heading is visible");
             Reporter.log("[Step] Dashboard heading is visible", true);
         } catch (AssertionError e) {
-            attachScreenshotOnFailure();
             ExtentManager.getTest().fail("Dashboard heading not visible: " + e.getMessage());
             Reporter.log("[FAIL] Dashboard heading not visible: " + e.getMessage(), true);
             throw e;
@@ -70,7 +69,6 @@ public class DashboardPageStepDefinitions {
             ExtentManager.getTest().pass("Dashboard heading displayed: " + expectedHeading);
             Reporter.log("[Step] Dashboard heading displayed: " + expectedHeading, true);
         } catch (AssertionError e) {
-            attachScreenshotOnFailure();
             ExtentManager.getTest().fail("Dashboard heading not displayed: " + e.getMessage());
             Reporter.log("[FAIL] Dashboard heading not displayed: " + e.getMessage(), true);
             throw e;
@@ -88,7 +86,6 @@ public class DashboardPageStepDefinitions {
             ExtentManager.getTest().pass("Top navigation bar is visible");
             Reporter.log("[Step] Top navigation bar is visible", true);
         } catch (AssertionError e) {
-            attachScreenshotOnFailure();
             ExtentManager.getTest().fail("Top navigation bar not visible: " + e.getMessage());
             Reporter.log("[FAIL] Top navigation bar not visible: " + e.getMessage(), true);
             throw e;
@@ -102,7 +99,6 @@ public class DashboardPageStepDefinitions {
             ExtentManager.getTest().pass("User name visible in top navigation: " + expectedName);
             Reporter.log("[Step] User name visible in top navigation: " + expectedName, true);
         } catch (AssertionError e) {
-            attachScreenshotOnFailure();
             ExtentManager.getTest().fail("User name not visible in top navigation: " + e.getMessage());
             Reporter.log("[FAIL] User name not visible in top navigation: " + e.getMessage(), true);
             throw e;
@@ -116,7 +112,6 @@ public class DashboardPageStepDefinitions {
             ExtentManager.getTest().pass("Menu item visible: " + menuItem);
             Reporter.log("[Step] Menu item visible: " + menuItem, true);
         } catch (AssertionError e) {
-            attachScreenshotOnFailure();
             ExtentManager.getTest().fail("Menu item not visible: " + e.getMessage());
             Reporter.log("[FAIL] Menu item not visible: " + e.getMessage(), true);
             throw e;
@@ -134,7 +129,6 @@ public class DashboardPageStepDefinitions {
             ExtentManager.getTest().pass("Quick Launch widget is visible");
             Reporter.log("[Step] Quick Launch widget is visible", true);
         } catch (AssertionError e) {
-            attachScreenshotOnFailure();
             ExtentManager.getTest().fail("Quick Launch widget not visible: " + e.getMessage());
             Reporter.log("[FAIL] Quick Launch widget not visible: " + e.getMessage(), true);
             throw e;
@@ -148,7 +142,6 @@ public class DashboardPageStepDefinitions {
             ExtentManager.getTest().pass("Quick Launch shortcut visible: " + shortcutName);
             Reporter.log("[Step] Quick Launch shortcut visible: " + shortcutName, true);
         } catch (AssertionError e) {
-            attachScreenshotOnFailure();
             ExtentManager.getTest().fail("Quick Launch shortcut not visible: " + e.getMessage());
             Reporter.log("[FAIL] Quick Launch shortcut not visible: " + e.getMessage(), true);
             throw e;
@@ -172,7 +165,6 @@ public class DashboardPageStepDefinitions {
             ExtentManager.getTest().pass("Dashboard widget visible: " + widgetName);
             Reporter.log("[Step] Dashboard widget visible: " + widgetName, true);
         } catch (AssertionError e) {
-            attachScreenshotOnFailure();
             ExtentManager.getTest().fail("Dashboard widget not visible: " + e.getMessage());
             Reporter.log("[FAIL] Dashboard widget not visible: " + e.getMessage(), true);
             throw e;
@@ -207,26 +199,25 @@ public class DashboardPageStepDefinitions {
             ExtentManager.getTest().pass("Page URL contains: " + urlFragment);
             Reporter.log("[Step] Page URL contains: " + urlFragment, true);
         } catch (AssertionError e) {
-            attachScreenshotOnFailure();
             ExtentManager.getTest().fail("Page URL does not contain: " + urlFragment + ". " + e.getMessage());
             Reporter.log("[FAIL] Page URL does not contain: " + urlFragment + ". " + e.getMessage(), true);
             throw e;
         }
     }
 
-    private void attachScreenshotOnFailure() {
-        try {
-            Page page = pom.getDashboardPage().getPage();
-            if (page != null) {
-                String screenshotPath = "target/cucumber-reports/FAILURE_SCREENSHOT_" + System.currentTimeMillis() + ".png";
-                page.screenshot(new Page.ScreenshotOptions().setPath(java.nio.file.Paths.get(screenshotPath)).setFullPage(true));
-                ExtentManager.getTest().addScreenCaptureFromPath("../cucumber-reports/" + new java.io.File(screenshotPath).getName());
-                Reporter.log("<a href='../cucumber-reports/" + new java.io.File(screenshotPath).getName() + "'>Screenshot</a>", true);
-            }
-        } catch (Exception ex) {
-            ExtentManager.getTest().warning("Failed to capture screenshot: " + ex.getMessage());
-            Reporter.log("[WARN] Failed to capture screenshot: " + ex.getMessage(), true);
-        }
-    }
+    // private void attachScreenshotOnFailure() {
+    //     try {
+    //         Page page = pom.getDashboardPage().getPage();
+    //         if (page != null) {
+    //             String screenshotPath = "target/cucumber-reports/FAILURE_SCREENSHOT_" + System.currentTimeMillis() + ".png";
+    //             page.screenshot(new Page.ScreenshotOptions().setPath(java.nio.file.Paths.get(screenshotPath)).setFullPage(true));
+    //             ExtentManager.getTest().addScreenCaptureFromPath("../cucumber-reports/" + new java.io.File(screenshotPath).getName());
+    //             Reporter.log("<a href='../cucumber-reports/" + new java.io.File(screenshotPath).getName() + "'>Screenshot</a>", true);
+    //         }
+    //     } catch (Exception ex) {
+    //         ExtentManager.getTest().warning("Failed to capture screenshot: " + ex.getMessage());
+    //         Reporter.log("[WARN] Failed to capture screenshot: " + ex.getMessage(), true);
+    //     }
+    // }
 }
 
